@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="textView_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:fontFamily">@font/notosans_b</item>
+    </style>
+    <style name="review_style">
+    </style>
+    <style name="key_box">
+        <item name="android:background">@color/white</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:layout_width">312dp</item>
+        <item name ="android:layout_height">384dp</item>
+        <item name ="android:layout_marginTop">10dp</item>
+        <item name ="android:layout_marginStart">24dp</item>
+        <item name ="android:layout_marginEnd">24dp</item>
+    </style>
+    <!--상단&하단바-->
+    <style name="bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <!--화면1 리뷰-->
+    <style name="box_1">
+        <item name="android:layout_width">312dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/round</item>
+    </style>
+    <style name="box_2">
+        <item name="android:layout_width">312dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/round</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+    <style name="box_3">
+        <item name="android:layout_width">312dp</item>
+        <item name="android:layout_height">186dp</item>
+        <item name="android:background">@drawable/round</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+    </style>
+    <style name="box_4">
+        <item name="android:layout_width">312dp</item>
+        <item name="android:layout_height">186dp</item>
+        <item name="android:background">@drawable/round</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">174dp</item>
+    </style>
+    <style name="box_5">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:layout_height">570dp</item>
+        <item name="android:background">@drawable/round</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#EAEAEA</item>
+    </style>
+</resources>
