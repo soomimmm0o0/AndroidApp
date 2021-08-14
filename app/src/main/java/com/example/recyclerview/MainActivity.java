@@ -27,10 +27,15 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        //recyclerView.smoothScrollBy(0, 800);
+
+        Client.main();
+        String[] out=Client.getOutput();
+//        System.out.println(out.length);
+
         list = new ArrayList<>();
-        for(int i=0; i<100 ; i++){
-            String num= Integer.toString(i%5);
-            item= new ItemData(num,"쿠팡","jsm6616","2020.05.25","으악?? ");
+        for(int i=0; i<100 ;i++){
+            item= new ItemData("a","b","c","d","e");
             list.add(item);
         }
         Adapter adapter = new Adapter(list);
