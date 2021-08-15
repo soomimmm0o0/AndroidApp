@@ -1,6 +1,8 @@
 package com.example.recyclerview.Recy;
 
-public class ItemData {
+import java.io.Serializable;
+
+public class ItemData implements Serializable {
     //android:id="@+id/grade_num" android:id="@+id/cite" android:id="@+id/reviewId" android:id="@+id/review_date"android:id="@+id/contents"
     private String Sgrade;
     private String Scite;

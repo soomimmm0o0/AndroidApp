@@ -16,18 +16,27 @@ import java.util.ArrayList;
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     private ArrayList<ItemData> itemData;
-    public Adapter(ArrayList<ItemData> itemData) {
+    private ViewType sel_type;
+    public Adapter(ViewType sel_type,ArrayList<ItemData> itemData) {
+        this.sel_type=sel_type;
         this.itemData = itemData;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view;
         Context context = parent.getContext();
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.recycle, parent, false);
-        return new ViewHolder(view);
-
+        if(sel_type==ViewType.small) {
+            view = inflater.inflate(R.layout.recycle_s, parent, false);
+            return new ViewHolder(view);
+        }
+        else if(sel_type==ViewType.large){
+            view = inflater.inflate(R.layout.recycle, parent, false);
+            return new ViewHolder(view);
+        }
+        return null;
     }
 
     @Override
